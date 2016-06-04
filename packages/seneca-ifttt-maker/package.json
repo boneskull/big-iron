@@ -1,0 +1,21 @@
+{
+  "name": "seneca-ifttt-maker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "node-ifttt-maker": "^0.1.2"
+  },
+  "peerDependencies": {
+    "seneca": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1"
+  }
+}
