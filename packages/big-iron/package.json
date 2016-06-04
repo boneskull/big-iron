@@ -1,0 +1,23 @@
+{
+  "name": "big-iron",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "keywords": [],
+  "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "seneca": "^2.1.0",
+    "seneca-cron": "0.0.5",
+    "seneca-entity": "^0.1.1",
+    "seneca-external-ip-check": "*",
+    "seneca-ifttt-maker": "*",
+    "seneca-jsonfile-store": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1"
+  }
+}
