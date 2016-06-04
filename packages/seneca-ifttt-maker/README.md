@@ -5,7 +5,7 @@
 ## Install
 
 ```shell
-$ npm i senca senca-ifttt-maker
+$ npm i seneca seneca-ifttt-maker
 ```
 
 ## Usage
