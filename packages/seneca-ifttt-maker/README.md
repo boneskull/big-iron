@@ -2,6 +2,10 @@
 
 > Seneca plugin to send data to IFTTT Maker
 
+## Requirements
+
+Node.js >= v6
+
 ## Install
 
 ```shell
@@ -39,6 +43,8 @@ require('seneca')()
 - `value1` - `Value1` value
 - `value2` - `Value2` value
 - `value3` - `Value3` value
+
+*Returns `undefined` upon success*.
 
 ## Author
 
