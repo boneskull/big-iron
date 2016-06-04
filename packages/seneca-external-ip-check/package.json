@@ -1,0 +1,21 @@
+{
+  "name": "seneca-external-ip-check",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "external-ip": "^0.2.4"
+  },
+  "peerDependencies": {
+    "seneca": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1"
+  }
+}
