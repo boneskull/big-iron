@@ -31,7 +31,7 @@ require('seneca')()
 `role:losant`, `cmd:send`
 
 **Required** arguments:
-- `state` - Object representing device state; keys should be configured in the device's settings on Lodash's site
+- `state` - Object representing device state; keys should be configured in the device's settings on Lodash's site.
 
 *Optional* arguments:
 - `time` - A `Date` object representing the time of the state update.  Defaults to "now".
