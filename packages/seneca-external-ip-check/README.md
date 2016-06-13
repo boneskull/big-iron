@@ -1,5 +1,7 @@
 # seneca-external-ip-check
 
+[![Travis](https://img.shields.io/travis/boneskull/seneca-external-ip-check.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/boneskull/seneca-external-ip-check) [![bitHound](https://img.shields.io/bithound/dependencies/github/boneskull/seneca-external-ip-check.svg?maxAge=2592000?style=flat-square)](https://www.bithound.io/github/boneskull/seneca-external-ip-check) [![bitHound](https://img.shields.io/bithound/devDependencies/github/boneskull/seneca-external-ip-check.svg?maxAge=2592000?style=flat-square)](https://www.bithound.io/github/boneskull/seneca-external-ip-check) [![npm](https://img.shields.io/npm/v/seneca-external-ip-check.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/seneca-external-ip-check)
+
 > Seneca plugin to return the external IP of server
 
 ## Requirements
@@ -30,10 +32,6 @@ require('seneca')()
 Returns:
 - `{ip: "<external-ip>"}`
 
-## Author
-
-© 2016 Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com)
-
 ## License
 
-Released under the [MIT license](http://boneskull.mit-license.org).
+© 2016 [Christopher Hiller](https://boneskull.com).  Licensed MIT.
