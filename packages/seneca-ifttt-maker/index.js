@@ -23,7 +23,7 @@ function IFTTTMaker (options) {
       role: plugin,
       cmd: 'send',
       event
-    }, ({method, value1, value2, value3}, done) => {
+    }, ({method = 'GET', value1, value2, value3}, done) => {
       client.request({
         event,
         params: {
@@ -31,7 +31,7 @@ function IFTTTMaker (options) {
           value2,
           value3
         },
-        method: method || 'GET'
+        method
       }, err => {
         if (err) {
           done(err);
