@@ -1,9 +1,20 @@
 {
   "name": "seneca-ifttt-maker",
   "version": "0.1.0",
-  "description": "",
+  "description": "Seneca plugin to send data to IFTTT Maker",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "seneca",
+    "seneca-plugin",
+    "senecaplugin",
+    "ifttt",
+    "maker",
+    "if"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boneskull/seneca-ifttt-maker.git"
+  },
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
   "license": "MIT",
   "dependencies": {
