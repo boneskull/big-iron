@@ -2,7 +2,7 @@
 
 const extIP = require('external-ip');
 
-function externalIPCheck (options) {
+function externalIPCheck (options = {}) {
   const seneca = this;
   const getIP = extIP(options);
   const plugin = 'external-ip-check';
