@@ -1,5 +1,7 @@
 # seneca-ifttt-maker
 
+[![Travis](https://img.shields.io/travis/boneskull/seneca-ifttt-maker.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/boneskull/seneca-ifttt-maker) [![bitHound](https://img.shields.io/bithound/dependencies/github/boneskull/seneca-ifttt-maker.svg?maxAge=2592000?style=flat-square)](https://www.bithound.io/github/boneskull/seneca-ifttt-maker) [![bitHound](https://img.shields.io/bithound/devDependencies/github/boneskull/seneca-ifttt-maker.svg?maxAge=2592000?style=flat-square)](https://www.bithound.io/github/boneskull/seneca-ifttt-maker) [![npm](https://img.shields.io/npm/v/seneca-ifttt-maker.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/seneca-ifttt-maker)
+
 > Seneca plugin to send data to IFTTT Maker
 
 ## Requirements
@@ -43,10 +45,6 @@ require('seneca')()
 
 *Returns `undefined` upon success*.
 
-## Author
-
-© 2016 Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com)
-
 ## License
 
-Released under the [MIT license](http://boneskull.mit-license.org).
+© 2016 [Christopher Hiller](https://boneskull.com).  Licensed MIT.
