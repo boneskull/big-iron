@@ -14,19 +14,16 @@ $ npm i seneca seneca-ifttt-maker
 
 ## Usage
 
-The `IFTTT_MAKER_KEY` environment variable must be present:
-
-```shell
-$ export IFTTT_MAKER_KEY=my-api-key
-```
-
 ```js
 // the plugin will create actions for each event name specified
 require('seneca')()
-  .use(require('seneca-ifttt-maker'), {events: [
-    'my_event',
-    'another_event'
-  ]});
+  .use(require('seneca-ifttt-maker'), {
+    events: [
+      'my_event',
+      'another_event'
+    ],
+    key: 'MY_IFTTT_MAKER_KEY'
+  });
 ```
 
 ## Action Patterns

@@ -4,7 +4,7 @@ const IFTTT = require('node-ifttt-maker');
 
 function iftttMaker (options = {}) {
   const seneca = this;
-  const client = new IFTTT(process.env.IFTTT_MAKER_KEY);
+  const client = new IFTTT(options.key);
   const plugin = 'ifttt-maker';
   const events = options.events || ['test_event'];
 
