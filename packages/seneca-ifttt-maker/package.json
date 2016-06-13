@@ -18,6 +18,7 @@
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
   "license": "MIT",
   "dependencies": {
+    "check-more-types": "^2.21.0",
     "node-ifttt-maker": "^0.1.2"
   },
   "peerDependencies": {
@@ -27,6 +28,7 @@
     "node": ">=6"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^2.12.0",
     "eslint-config-semistandard": "^6.0.2",
     "eslint-config-standard": "^5.3.1",

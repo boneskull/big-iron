@@ -1,14 +1,24 @@
 'use strict';
 
 const IFTTT = require('node-ifttt-maker');
+const is = require('check-more-types');
 
-function iftttMaker (options = {}) {
+const isValidOptions = is.schema({
+  key: is.unemptyString,
+  events: is.and(is.unemptyArray, is.arrayOf.bind(null, is.unemptyString))
+});
+
+function IFTTTMaker (options) {
+  if (!isValidOptions(options)) {
+    throw new Error('Invalid options; expected Object with non-empty string "key" and non-empty Array "events" of non-empty strings');
+  }
+
   const seneca = this;
-  const client = new IFTTT(options.key);
+  const {key, events} = options;
+  const client = new IFTTT(key);
   const plugin = 'ifttt-maker';
-  const events = options.events || ['test_event'];
 
-  events.forEach((event) => {
+  events.forEach(event => {
     seneca.add({
       role: plugin,
       cmd: 'send',
@@ -22,7 +32,7 @@ function iftttMaker (options = {}) {
           value3
         },
         method: method || 'GET'
-      }, (err) => {
+      }, err => {
         if (err) {
           done(err);
           return;
@@ -31,10 +41,10 @@ function iftttMaker (options = {}) {
         done();
       });
     });
-    seneca.log.info('event', event);
+    seneca.log.info('event-added', event);
   });
 
   return plugin;
 }
 
-module.exports = iftttMaker;
+module.exports = IFTTTMaker;
