@@ -64,11 +64,26 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm test",
-      "commit-msg": "validate-commit-msg"
+      "pre-commit": "opt --out pre-commit --exec \"npm test\"",
+      "commit-msg": "opt --out commit-msg --exec validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "build",
+        "ci"
+      ]
     }
   }
 }
