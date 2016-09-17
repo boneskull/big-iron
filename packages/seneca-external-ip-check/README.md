@@ -11,14 +11,14 @@ Node.js >= v6
 ## Install
 
 ```shell
-$ npm i seneca seneca-ifttt-maker
+$ npm i seneca seneca-external-ip-check
 ```
 
 ## Usage
 
 ```js
 require('seneca')()
-  .use(require('seneca-external-ip-maker'), configuration);
+  .use(require('seneca-external-ip-check'), configuration);
 ```
 
 `configuration` is passed directly to [external-ip](https://www.npmjs.com/package/external-ip) module, and is entirely optional.

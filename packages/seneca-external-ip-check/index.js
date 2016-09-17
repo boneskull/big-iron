@@ -1,11 +1,11 @@
 'use strict';
 
 const extIP = require('external-ip');
+const plugin = 'external-ip-check';
 
-function externalIPCheck (options = {}) {
+function externalIPCheck (opts = {}) {
   const seneca = this;
-  const getIP = extIP(options);
-  const plugin = 'external-ip-check';
+  const getIP = extIP(opts);
 
   seneca.add({
     role: plugin,
@@ -14,10 +14,10 @@ function externalIPCheck (options = {}) {
     getIP((err, ip) => {
       if (err) {
         done(err);
-      } else {
-        seneca.log.info('external ip', ip);
-        done(null, {ip});
+        return;
       }
+      seneca.log.info('external ip', ip);
+      done(null, {ip});
     });
   });
 
