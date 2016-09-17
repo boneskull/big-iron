@@ -9,6 +9,7 @@
     "seneca-plugin",
     "external",
     "ipv4",
+    "ip",
     "vpn"
   ],
   "repository": {
