@@ -49,7 +49,9 @@
   },
   "scripts": {
     "start": "p-s",
-    "test": "p-s test"
+    "test": "p-s test",
+    "commitmsg": "p-s hooks.commit-msg",
+    "precommit": "p-s hooks.pre-commit"
   },
   "release": {
     "verifyConditions": [
