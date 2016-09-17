@@ -66,8 +66,8 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "opt --out pre-commit --exec \"npm test\"",
-      "commit-msg": "opt --out commit-msg --exec validate-commit-msg"
+      "pre-commit": "npm test",
+      "commit-msg": "validate-commit-msg"
     }
   }
 }
