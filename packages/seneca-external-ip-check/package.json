@@ -50,8 +50,8 @@
   "scripts": {
     "start": "p-s",
     "test": "p-s test",
-    "commitmsg": "p-s hooks.commit-msg",
-    "precommit": "p-s hooks.pre-commit"
+    "commitmsg": "p-s hooks.commitmsg",
+    "precommit": "p-s hooks.precommit"
   },
   "release": {
     "verifyConditions": [
