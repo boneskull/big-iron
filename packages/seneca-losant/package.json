@@ -22,16 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boneskull/seneca-losant.git"
+    "url": "https://github.com/boneskull/big-iron/tree/master/packages/seneca-losant"
   },
   "peerDependencies": {
-    "seneca": "^2.0.0"
+    "seneca": "^3.0.0"
   },
   "engines": {
     "node": ">=6"
-  },
-  "scripts": {
-    "test": "p-s test",
-    "start": "p-s"
   }
 }
