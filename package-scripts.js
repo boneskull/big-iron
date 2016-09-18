@@ -11,14 +11,14 @@ exports.scripts = {
   },
   test: {
     description: 'Test, lint & generate coverage',
-    default: 'p-s -p test.lint,test.mocha',
+    default: 'p-s test.lint,test.mocha',
     lint: {
       script: 'eslint index.js test',
       description: 'Lint code'
     },
     mocha: {
       description: 'Run tests w/ Mocha',
-      script: 'nyc mocha'
+      script: 'nyc mocha --colors'
     }
   },
   coverage: {
