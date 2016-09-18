@@ -10,7 +10,7 @@ before_script:
   - npm prune
 script:
   - npm test
-  - npm start coverage || true
+  - npm run coverage || true
 after_success:
   - npm start release
 branches:

@@ -41,7 +41,8 @@
     "precommit": "opt --out pre-commit --exec \"npm run test\"",
     "commitmsg": "opt --out commit-msg --exec validate-commit-msg",
     "prepublish": "p-s bootstrap",
-    "start": "p-s"
+    "start": "p-s",
+    "coverage": "lerna exec -- p-s coverage.report,coverage.send"
   },
   "repository": {
     "type": "git",
