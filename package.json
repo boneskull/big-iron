@@ -27,7 +27,7 @@
       "path": "./node_modules/cz-lerna-changelog"
     },
     "ghooks": {
-      "pre-commit": "opt --out pre-commit --exec \"npm test\"",
+      "pre-commit": "opt --in pre-commit --exec \"npm run test\"",
       "commit-msg": "opt --out commit-msg --exec validate-commit-msg"
     },
     "validate-commit-msg": {
