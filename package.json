@@ -40,8 +40,8 @@
     "test": "lerna exec -- p-s test",
     "precommit": "opt --out pre-commit --exec \"npm run test\"",
     "commitmsg": "opt --out commit-msg --exec validate-commit-msg",
-    "semantic-release": "p-s release",
-    "prepublish": "lerna bootstrap"
+    "prepublish": "p-s bootstrap",
+    "start": "p-s"
   },
   "repository": {
     "type": "git",
