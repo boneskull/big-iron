@@ -178,7 +178,7 @@ describe('integration', () => {
 
   beforeEach(() => {
     stub();
-    seneca = require('seneca')()
+    seneca = require('seneca')({log: 'silent'})
       .use(IFTTTMaker, {
         key: 'foo',
         events
