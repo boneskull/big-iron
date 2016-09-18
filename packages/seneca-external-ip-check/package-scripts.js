@@ -32,9 +32,5 @@ exports.scripts = {
   release: {
     description: 'Release with semantic-release',
     script: 'semantic-release pre && npm publish && semantic-release post'
-  },
-  hooks: {
-    'commitmsg': 'opt --out commit-msg --exec "validate-commit-msg"',
-    'precommit': 'opt --out pre-commit --exec "npm test"'
   }
 };
