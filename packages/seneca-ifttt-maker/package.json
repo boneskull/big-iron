@@ -1,6 +1,6 @@
 {
   "name": "seneca-ifttt-maker",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Seneca plugin to send data to IFTTT Maker",
   "main": "index.js",
   "keywords": [
